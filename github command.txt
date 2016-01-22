@@ -88,6 +88,11 @@ git remote -v
 To remove the current repository from current git:
 git remote remove origin
 
+Rename a remote connection from <old-name> to <new-name>.
+git remote rename origin origin1
+
+Remove the connection to the remote repository called <name>.
+git remote rm origin
 
 Adding file to your respository:
 git add abc.html
@@ -128,6 +133,7 @@ git config --global http.proxy http://localhost\1031210334:3648720@172.16.0.19:8
 
 BRANCHES: branches are the fundamental mean of launching a seperate line of development with in a software project.
 master branch is default branch.
+
 
 
 Creating a branch:

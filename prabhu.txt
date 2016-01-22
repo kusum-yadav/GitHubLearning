@@ -1,0 +1,190 @@
+Setting up the Git:
+1. To download :https://desktop.github.com/
+2. On your computer open git shell
+3. Tell git your name by following command
+	$git config --global user.name "PRABHUNATH YADAV"
+4. Tell git your email:
+	$git config --global user.email "prabhunath.1245@gmail.com"
+
+Authenticating github from git:
+twoi methods are there:
+1.Connecting over HTTPS (recommended)  --> All the time email and password will be asked.
+2.Connecting over SSH --> only once email and password is requires there after SSH key is generated and we use the link.
+
+To Check which repository is connected to our git :
+$ git remote -v
+
+To remove the current repository from our git shell:  (This will not delete/ its just to remove and you can swith to another repo)
+ $ git remote remove myorigin
+
+To add another repository to your git use following command:
+$ git remote add myorigin <link of your ssh>
+
+
+To check the status:
+$ git status
+
+To add all repo:
+$git add --all
+
+To commit:
+$ git commit -m "message based on commit"
+ 		or
+$ git commit --message="Commit message"
+
+
+To push:
+$ git push myorigin master
+
+
+To get started:
+1. cd nameofdirectory
+2. git init
+
+To add new files to the repository or add changed files to staged area:
+
+	$ git add <files>
+
+To commit them:
+
+	$ git commit
+To commit unstaged but changed files:
+
+	$ git commit -a
+To push to a repository (say origin):
+
+	$ git push origin
+To push only one of your branches (say master):
+
+	$ git push origin master
+To fetch the contents of another repository (say origin):
+
+	$ git fetch origin
+To fetch only one of the branches (say master):
+
+	$ git fetch origin master
+To merge a branch with the current branch (say other_branch):
+
+	$ git merge other_branch
+
+
+--------------------------------------------------------------------------------------------------------------------------
+To check version of git:
+git --version
+
+To initialise the git:
+git init
+
+Configuring remote repository:
+git remote add origin git@github.com:prabhunath/GitHubLearning.git    --->>> using SSH link
+		or
+git remote add origin https://github.com/prabhunath/GitHubLearning.git   --->>> using HTTP link.
+
+NOTE: here in place of origin we can have any word like prabhu , xyz  etc . and it must be memorised.
+
+To check which repository is currently attached to your git:
+git remote -v
+
+To remove the current repository from current git:
+git remote remove origin
+
+Rename a remote connection from <old-name> to <new-name>.
+git remote rename origin origin1
+
+Remove the connection to the remote repository called <name>.
+git remote rm origin
+
+Adding file to your respository:
+git add abc.html
+ or 
+git add --all
+NOTE:::: red color file shows they are not traced in git(not added in index) and green color line represents they are traced in git(added in index).
+
+Removing a file from index:
+git rm --cached hello.txt
+
+
+.gitignoire file creatioin and its importance:
+create a file with name .gitignore. This file is used to ignore those files which you want to. By mentioning the file name in it.
+after this when ever you check the status the no status will be shown about the file name which you have added in your 
+
+Configure global commit author.
+$git config --global user.name "PRABHUNATH YADAV"
+
+$git config --global user.email "prabhunath.1245@gmail.com"
+
+To commit:
+$ git commit -m "message based on commit"
+or
+$ git commit --message="it my msgs"
+
+Git push commans:
+git push -u origin master
+
+view you commits:
+git log
+
+ 	
+Configure Ip address and port for git:
+git config --global http.proxy http://localhost:172.16.0.19:8080
+git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
+git config --global http.proxy http://localhost\1031210334:3648720@172.16.0.19:8080
+
+
+BRANCHES: branches are the fundamental mean of launching a seperate line of development with in a software project.
+master branch is default branch.
+
+
+
+Creating a branch:
+git branch branch_name
+
+list branches:
+git branch
+
+branch name with green color and * sigh represent that you are in that branch.
+
+list of branches with details
+git show-branch
+
+changing or checking out branches:(moving from one branch to another...)
+git checkout branchname
+
+creating a  new branch and switching to that new branch :
+git checkout -b newbranch_name
+
+creating new file using command as follows:
+echo > file_name.txt
+
+Pushing from another brach:
+git push origin branch_name
+
+Merging one branch data to another branch:
+1. move to the branch which you want to merge with another...
+for example there are 3 branches 1.master 2. branch1 3. branch2 and there is some data to master and branch1 ,
+ so to merge branch2 with branch1 move to(cherkout) branc2 and use below comnmand to switch:
+
+git merge branch1
+
+now they are merged in git but not stored in github so we will push it.
+
+git push origin branch2
+
+CLONING:::::::::::::
+By cloning we fech data from remote (github) to out local system:
+git clone https://github.com/prabhunath/GitHubLearning.git    -->this link is there in your github repo.
+
+FORK:::: 
+if you want some other people github data then we go for fork .
+just click on fork button on someone else repository.
+after that you will be able to modify it in your personal repo and work on it.
+using other option watching , not watching ands ignoring will give you notification .
+star will let you make your favourite.
+
+
+github PULL request.
+
+
+
+
+

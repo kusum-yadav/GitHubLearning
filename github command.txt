@@ -113,6 +113,9 @@ $ git commit -m "message based on commit"
 or
 $ git commit --message="it my msgs"
 
+Git push commans:
+git push -u origin master
+
 view you commits:
 git log
 
